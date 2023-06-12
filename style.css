@@ -1,0 +1,57 @@
+.heading{
+    width: 100%;
+    text-align: left;
+    font-size: 28px;
+    font-family: 'Overpass Mono', monospace;
+}
+#instructions{
+    border: 2px white solid;
+    float: right;
+}
+body{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.head{
+    color: black;
+    display: inline;
+}
+canvas{
+    border: white 5px solid;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-top: 70px;
+}
+@keyframes example{
+    from{
+        box-shadow: 15px 15px 10px white;
+    }to{
+        box-shadow: 15px 15px 10px cyan;
+    }
+}
+.modal-body{
+    text-align: left;
+}
+.btn-danger{
+    float: right;
+    margin-top: 300px;
+    margin-right: 70px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px white ridge;
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes example2{
+    from{
+        background-color: #bb2124;
+        color: dodgerblue;
+    }to{
+        background: #5bc0de;
+        color: green;
+    }
+}

@@ -44,32 +44,23 @@ canvas{
     animation-name: example2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-}
-.btn-danger{
-    float: right;
-    margin-right: 70px;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 2px white ridge;
-    animation-name: example2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    margin-top: 20px;
 }
 @keyframes example2{
     from{
         background-color: #b47172;
-        color: dodgerblue;
     }to{
         background: #5bc0de;
-        color: green;
     }
 }
 #footer{
     font-size: 25px;
     line-height: 2;
-    background: rgb(188, 183, 183);
+    background-color: rgb(188, 183, 183);
     color: white;
     width: 100%;
     margin: 0;
+    position: fixed;
+    bottom: 0;
+    border: 2px solid black;
 }

@@ -1,8 +1,9 @@
 rWristX = 0;
 rWristY = 0;
 rWristScore = 0;
+game_status = "";
 function setup() {
-    canvas = createCanvas(800, 600);
+    canvas = createCanvas(670, 470);
     canvas.parent("canvas");
     video = createCapture(VIDEO);
     video.size(800, 600);
@@ -15,7 +16,10 @@ function draw() {
     if(rWristScore >= 0.2){
         fill("red");
         stroke("red");
-        circle(rWristX, rWristY, 50);
+        circle(rWristX, rWristY, 25);
+    }
+    if(game_status = "start"){
+
     }
 }
 function modelLoaded() {
@@ -28,4 +32,8 @@ function gotPoses(results) {
         rWristScore = results[0].pose.keypoints[10].score;
         console.log(results);
     } 
+}
+function start() {
+    game_status = "started";
+    document.getElementById("status").innerHTML = "Status: Game has loaded."
 }

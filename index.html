@@ -20,11 +20,18 @@
             </div>
             <br>
             <br>
-            <button class="btn btn-success" id="start" onclick="start();">Play Game</button>
-            <br>
-            <br>
-            <button class="btn btn-blank" id="restart" onclick="restart();">Restart</button>
-            <div id="canvas"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <div class="commands">
+                    <br>
+                    <h3 id="command">Commands</h3>
+                    <button class="btn btn-success" id="start" onclick="start();">Play Game</button>
+                    <br>
+                    <button class="btn btn-primary" id="restart" onclick="restart();">Restart</button>
+                </div>
+                <br>
+                <h4 id="status">Status</h4>
+            </div>
+            <div id="canvas" class="col-lg-10 col-sm-10 col-md-10"></div>
             <div id="Modal" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -45,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-danger">Creator - Shaurya</button>
+            <!--<button class="btn btn-danger">Creator - Shaurya</button>-->
             <br>
             <br>
             <br>
